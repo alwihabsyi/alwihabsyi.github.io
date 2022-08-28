@@ -1,0 +1,313 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', Helvetica, sans-serif;
+}
+nav {
+  background-color: rgb(58, 58, 58);
+  color: white;
+  width: 100%;
+  height: 60px;
+  font-family: Lato;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  padding-left: 20px;
+  letter-spacing: 2.5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 20px;
+}
+
+li {
+  padding: 10px;
+  font-size: 17px;
+  display: inline;
+  letter-spacing: 1px;
+  font-family: Poppins;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  font-family: Poppins, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+#about {
+  background-color: rgb(58, 58, 58);
+  color: whitesmoke;
+  width: 100%;
+  height: 100vh;
+  font-size: 1.2rem;
+  display: grid;
+  align-items: center;
+  font-family: Poppins;
+  grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 40rem) minmax(min-content, 40rem) minmax(4rem, 1fr);
+  row-gap: 3rem;
+}
+
+.abtme {
+  grid-column: 2/3;
+}
+
+#h2 {
+  padding: 40px 0;
+}
+
+.poto {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.poto > img {
+  border-radius: 50%;
+  border: 4px solid whitesmoke;
+}
+
+svg {
+  position: absolute;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.workisi {
+  padding: 1rem 2rem;
+  font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+.work-header {
+  padding-top: 4rem;
+  letter-spacing: 3px;
+  font-size: 1.3em;
+  max-width: 540px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(58, 58, 58);
+}
+
+.work-header h2 {
+  color: whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-content: center;
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.project {
+  height: 400px;
+  width: 351px;
+  background: whitesmoke;
+  text-align: center;
+  box-shadow: 1px 1px 3px rgb(0 0 0 / 50%);
+}
+
+.work-grid a {
+  text-decoration: none;
+}
+
+.code {
+  color: whitesmoke;
+  transition: color 0.5s ease-in-out;
+}
+
+.project:hover .code {
+  color: rgb(58, 58, 58);
+}
+
+.project-title {
+  font-size: 1.1rem;
+  padding: 5px;
+  color: rgb(58, 58, 58);
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+  margin-top: 2rem;
+  width: 100%;
+  min-height: 800px;
+  font-family: 'Poppins';
+  background-color: rgb(58, 58, 58);
+}
+
+.lets {
+  padding-top: 5rem;
+  color: whitesmoke;
+  font-size: 2.5rem;
+}
+
+.form {
+  position: relative;
+  top: 2rem;
+  border-radius: 5%;
+}
+
+label {
+  padding: 5px 3px;
+  color: whitesmoke;
+}
+
+input,
+textarea {
+  font-family: 'Poppins', Helvetica, sans-serif;
+  width: 600px;
+  height: 40px;
+  border: 2px solid rgb(58, 58, 58);
+  border-radius: 6px;
+  padding: 8px;
+}
+
+input[type='submit'] {
+  margin: 1em auto;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  width: 100px;
+  height: 35px;
+  background-color: rgb(73, 180, 73);
+  color: white;
+}
+
+input[type='submit']:hover {
+  background-color: rgb(79, 231, 79);
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(58, 58, 58);
+  color: whitesmoke;
+  border-top: 3px solid whitesmoke;
+  width: 100%;
+  height: 125px;
+}
+
+.foot {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.icons i {
+  text-shadow: 2px 2px 1px #1f1f1f;
+  border: none;
+  margin: 0 5px;
+  transition: transform 0.3s ease-out;
+}
+
+.icons i:hover {
+  transform: translateY(8px);
+}
+
+.icons a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 815px) {
+  body {
+    max-width: 815px;
+  }
+
+  .logo {
+    opacity: 0;
+  }
+
+  nav {
+    background-color: rgb(58, 58, 58);
+    width: 815px;
+    height: 30px;
+  }
+
+  #navbar ul {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(58, 58, 58);
+    color: whitesmoke;
+  }
+
+  .poto {
+    float: right;
+    padding-top: 100px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+  }
+
+  .poto img {
+    max-width: 300px;
+  }
+
+  .abtme {
+    text-align: center;
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .workisi {
+    margin-top: 50px;
+  }
+
+  .work-header {
+    background: none;
+  }
+  .work-header h2 {
+    color: rgb(58, 58, 58);
+    border-bottom: 2px solid rgb(58, 58, 58);
+  }
+
+  .project {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
